@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="03/07/25||16:52:24" using="Simscape Multibody Link Version 7.4" from="SolidWorks 32.5.0"/>
+<ModelUnits mass="kilogram" length="meter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Mag_lite_Assem_lab2" uid="Mag_lite_Assem_lab2" version="137">
+<AssemblyFile name="Mag_lite_Assem_lab2.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="MDL_WRIST_1.step_Default_sldprt-1" uid="MDL_WRIST_1.step_Default_sldprt-1" entityUid="MDL_WRIST_1.step_Default_sldprt*:*Default">
+<Transform>
+<Rotation>0.96912991133009241 0.22813461115715253 -0.093497669262405048 -0.2465506336745604 0.8967410555265134 -0.36751634571521735 -7.8477341897322684e-16 0.37922299313908858 0.92530531257235882</Rotation>
+<Translation>0.072996954909930967 0.089767925757962178 0.15447378523374403</Translation>
+</Transform>
+</Instance>
+<Instance name="MDL_ELBOWLINK.step_Default_sldprt-1" uid="MDL_ELBOWLINK.step_Default_sldprt-1" entityUid="MDL_ELBOWLINK.step_Default_sldprt*:*Default">
+<Transform>
+<Rotation>0.96912991133009219 0.24655063367456106 0 -0.24655063367456106 0.96912991133009219 0 0 0 1</Rotation>
+<Translation>0.063923239174825466 0.045178264145865656 0.13798337860590773</Translation>
+</Transform>
+</Instance>
+<Instance name="MDL_FOREARM_1.step_Default_sldprt-1" uid="MDL_FOREARM_1.step_Default_sldprt-1" entityUid="MDL_FOREARM_1.step_Default_sldprt*:*Default">
+<Transform>
+<Rotation>0.9691299113300923 0.24587183233626511 -0.018282697528950516 -0.24655063367456093 0.9664617101943298 -0.071864788060105905 -4.6003364879566936e-16 0.074153926341489318 0.99724680756979178</Rotation>
+<Translation>0.06226327956442658 0.046765295110380224 0.13758117949912768</Translation>
+</Transform>
+</Instance>
+<Instance name="MDL_BASE LINK_1.step_Default_sldprt-1" uid="MDL_BASE LINK_1.step_Default_sldprt-1" grounded="true" entityUid="MDL_BASE LINK_1.step_Default_sldprt*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.064540640948223565 0.050109276819356896 0.13998337860590776</Translation>
+</Transform>
+</Instance>
+<Instance name="MDL_EFC_1.step_Default_sldprt-1" uid="MDL_EFC_1.step_Default_sldprt-1" entityUid="MDL_EFC_1.step_Default_sldprt*:*Default">
+<Transform>
+<Rotation>0.96912991133009208 0.23398188410397702 -0.077715460987381302 -0.24655063367456206 0.91972524756861385 -0.30548036601314288 5.2265038504075201e-16 0.31521095618015083 0.94902162941842128</Rotation>
+<Translation>0.071373720541693511 0.083387390628474847 0.13825487446221352</Translation>
+</Transform>
+</Instance>
+<Instance name="MDL_EFJ_1.step_Default_sldprt-1" uid="MDL_EFJ_1.step_Default_sldprt-1" entityUid="MDL_EFJ_1.step_Default_sldprt*:*Default">
+<Transform>
+<Rotation>0.0086357832518860478 -0.99693817487777758 -0.077715498576485742 0.95165859222522242 0.03205703141305602 -0.30548039312022984 0.30703639375737574 -0.071320559506692541 0.94902161761475079</Rotation>
+<Translation>-0.24691475935483448 -0.10821433156961907 0.050041385878249356</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>MDL_BASE LINK_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.020000000000000004 0 -0.034000000000000002</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>MDL_ELBOWLINK.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.020000000000000004 0 -0.019000000000000003</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MDL_BASE LINK_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.020000000000000004 0 -0.036000000000000004</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MDL_ELBOWLINK.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.02 -0.020000000000000004 -0.034000000000000002</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MDL_ELBOWLINK.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.025624999999999995 0.0059807621135299985 0.014999999999999986</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MDL_FOREARM_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.0309 0.0059807621135300054 0.015000000000000013</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MDL_ELBOWLINK.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.025624999999999995 0.0059807621135299985 0.014999999999999986</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MDL_FOREARM_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.0309 0.0059807621135300054 0.015000000000000013</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MDL_ELBOWLINK.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.043999999999999997 -0.091999999999999998 0.097640000000000005</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MDL_FOREARM_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.042000000000000003 -0.019999999736523208 -4.5635520362630189e-10</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MDL_FOREARM_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.022000000000000013 -0.020000000488577314 0.15000000000000005</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MDL_WRIST_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.013799999999999993 -0.020000000488577391 0.14999999999999997</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MDL_FOREARM_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.018000000000000002 -0.020000000000000011 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MDL_WRIST_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.017800000000000003 -0.020000000488577391 0.14999999999999997</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MDL_WRIST_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.030480000000000007 -0.18928362948096794 0.17298133230812401</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MDL_EFC_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.0076000000000001205 -0.18928362948096794 0.17298133230812407</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MDL_WRIST_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.012000000000000011 -0.020000000733000012 -5.3788563880718954e-10</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MDL_EFC_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.011999999999999997 -0.019999995907965501 4.1840075848398328e-09</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MDL_EFC_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.020000000000000032 -0.24300000038628095 0.14664999737416501</Position>
+<Axis>0 3.0537405826258635e-08 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>MDL_EFJ_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.020000000000000032 -0.24300000012520495 0.13809999737416503</Position>
+<Axis>0 3.0537406076058815e-08 -0.99999999999999967</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MDL_EFC_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.020000000000000018 -0.24299999993738197 0.13194999737416502</Position>
+<Axis>0 3.0537412709641387e-08 -0.99999999999999967</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>MDL_EFJ_1.step_Default_sldprt-1</Uid>
+</InstancePath>
+<Position>-0.020000000000000018 -0.24299999995114094 0.13239999737416505</Position>
+<Axis>0 -3.0537412890052629e-08 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="MDL_BASE LINK_1.step_Default_sldprt" uid="MDL_BASE LINK_1.step_Default_sldprt*:*Default" version="114">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="MDL_BASE LINK_1.step_Default_sldprt.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.39125529038135443</Mass>
+<CenterOfMass>-0.020329536556097375 -0.00024325210879677021 -0.076591631585795295</CenterOfMass>
+<Inertia>0.0012030605762291156 0.0012039929732100595 0.0018325258411476958 -3.6168228924107028e-06 -2.0232127145399968e-06 -4.9008225548144459e-06</Inertia>
+</MassProperties>
+<GeometryFile name="MDL_BASE LINK_1.step_Default_sldprt_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="MDL_EFC_1.step_Default_sldprt" uid="MDL_EFC_1.step_Default_sldprt*:*Default" version="114">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="MDL_EFC_1.step_Default_sldprt.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0038724914469241561</Mass>
+<CenterOfMass>-0.019951640909695281 -0.20894630104540812 0.15259800747711944</CenterOfMass>
+<Inertia>9.7887861635339718e-07 2.6774502904525455e-07 9.1657592402801429e-07 2.2236460928849032e-07 6.2540692141707531e-10 -2.4362974876753869e-09</Inertia>
+</MassProperties>
+<GeometryFile name="MDL_EFC_1.step_Default_sldprt_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="MDL_EFJ_1.step_Default_sldprt" uid="MDL_EFJ_1.step_Default_sldprt*:*Default" version="114">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="MDL_EFJ_1.step_Default_sldprt.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0073861332191699457</Mass>
+<CenterOfMass>-0.0074674187744216275 -0.23330699567365007 0.096754035232394023</CenterOfMass>
+<Inertia>1.3995618306641811e-06 2.3587888110719135e-06 1.1691516906147348e-06 -1.9295854992432273e-08 -9.7375697694590837e-08 -3.9273555442767883e-08</Inertia>
+</MassProperties>
+<GeometryFile name="MDL_EFJ_1.step_Default_sldprt_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="MDL_ELBOWLINK.step_Default_sldprt" uid="MDL_ELBOWLINK.step_Default_sldprt*:*Default" version="114">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="MDL_ELBOWLINK.step_Default_sldprt.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.14683693000457462</Mass>
+<CenterOfMass>-0.020030816396491836 0.0063139713969300225 0.001163003933490927</CenterOfMass>
+<Inertia>0.00025214075374575736 0.00045313559762535086 0.00058802539240856023 -6.5483267886098085e-06 4.3216786741711951e-09 -1.8993174340779345e-07</Inertia>
+</MassProperties>
+<GeometryFile name="MDL_ELBOWLINK.step_Default_sldprt_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="MDL_FOREARM_1.step_Default_sldprt" uid="MDL_FOREARM_1.step_Default_sldprt*:*Default" version="114">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="MDL_FOREARM_1.step_Default_sldprt.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.02886769509511922</Mass>
+<CenterOfMass>-0.019533873696496094 -0.017932309318236962 0.06074571616711797</CenterOfMass>
+<Inertia>6.4660766840548113e-05 6.528344300311373e-05 6.4387896320627175e-06 1.1964429249898628e-06 1.112241611464184e-07 2.6590941003683866e-08</Inertia>
+</MassProperties>
+<GeometryFile name="MDL_FOREARM_1.step_Default_sldprt_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="MDL_WRIST_1.step_Default_sldprt" uid="MDL_WRIST_1.step_Default_sldprt*:*Default" version="114">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="MDL_WRIST_1.step_Default_sldprt.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.081026757618491638</Mass>
+<CenterOfMass>-0.019623769029795277 -0.080678334390224413 0.16812164502662513</CenterOfMass>
+<Inertia>0.00033089217640547058 3.1948664353336321e-05 0.00032125822686205783 -1.3851322133360585e-05 1.7280235218273944e-08 6.0744288318317312e-07</Inertia>
+</MassProperties>
+<GeometryFile name="MDL_WRIST_1.step_Default_sldprt_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
